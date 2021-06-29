@@ -1,8 +1,28 @@
-# obj1 = Customer.new
-# obj2 = Customer.new
+# O metodo strip não quebra a linha "gets.strip"
+# gets() quebra a linha
 
-=begin
+puts("Digite seu nome: ")
+name = gets.strip
+puts("Digite seu peso: ")
+weight = gets.strip
+puts("Digite sua idade: ")
+age = gets.strip
 
-Aqui, cust1 e cust2 são os nomes de dois objetos. Você escreve o nome do objeto seguido pelo sinal de igual (=) após o qual o nome da classe virá. Então, o operador ponto e a palavra-chave new virão em seguida.
+class Fetch 
+    @@ShortNew = 0
+    
+    def initialize(nome, idade, peso)
+        @novo_nome = nome
+        @nova_idade = idade
+        @novo_peso = peso
+    end
+    
+    def test
+        puts("Olá #{@novo_nome}, seu peso é #{@novo_peso} e sua idade é #{@nova_idade}")
+    end
+end
 
-=end
+# No caso seguinte response é um objeto associado a uma classe fetch
+
+response = Fetch.new(name, age, weight)
+response.test

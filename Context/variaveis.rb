@@ -40,3 +40,16 @@ class Duck < Animal
     @@kind = "walk"
 end
 
+# PseudoVariáveis
+
+# self - O objeto receptor do método atual.
+
+# true - valor que representa verdadeiro.
+  
+# false - valor que representa falso.
+  
+# nil - valor que representa indefinido.
+  
+# __FILE__ - O nome do arquivo de origem atual.
+  
+# __LINE__ - O número da linha atual no arquivo de origem.
